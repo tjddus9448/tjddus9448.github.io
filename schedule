@@ -6,13 +6,22 @@
 	<style>table, tr, th, td{
 	 border:1px solid black;  border-collapse:collapse;
 }
+	p#user_id_1{color:orange;}
+	p#user_id_2{color:red;}
+	p#user_id_3{color:green;}
+	p#user_id_4{color:blue;}
+	p#user_id_5{color:yellow;}
+	p#user_id_6{color:purple;}
+	p#user_id_7{color:navy;}
 </style> <!-- border-collapse:collapse 단선으로,반대하는 separate -->
 
 	<title>HTML5고급테이블 실습</title>
 </head>
 <body>
 <table>
-<caption>2019년 1학기 시간표</caption>
+<caption><h1 style="color:brown">
+
+2019년 1학기 시간표</h1></caption>
 <thead>
 	<tr>
 	<th></th><th>월</th> <th>화</th><th>수</th><th>목</th><th>금</th>
@@ -20,26 +29,26 @@
 </thead>
 <tbody>
 	<tr>
-	<td>9시</td><td rowspan="3">과학기술<br/>과 통계<br/>(서정인)<br/></td><td rowspan="2">오토마타<br/>와 응용<br/>(황선명)<br/></td><td rowspan="2">자료구조<br/>및 실습<br/>(강석훈)<br/></td><td></td>
-<td rowspan="10">- 공  강 -<br/></td>
+  <td>9시</td><td rowspan="3"><p id="user_id_1">과학기술<br/>과 통계<br/>(서정인)<br/></p></td> <td rowspan="2"><p id="user_id_3">오토마타<br/>와 응용<br/>(황선명)<br/></p></td>
+	<td rowspan="2"><p id="user_id_4">자료구조<br/>및 실습<br/>(강석훈)<br/></p></td><td></td> <td rowspan="10">- 공  강 -<br/></td>
 	</tr>
 	<tr>
 	<td>10시</td><td></td>
 	</tr>
 	<tr>
-	<td>11시</td><td rowspan="2">자료구조<br/>및 실습<br/>(강석훈)<br/></td><td></td>
+	<td>11시</td><td rowspan="2"><p id="user_id_4">자료구조<br/>및 실습<br/>(강석훈)<br/></p></td><td></td>
 	</tr>
 	<tr>
-	<td>12시</td><td></td><td rowspan="2">인터넷<br/>프로그래밍<br/>(우훈식)<br/></td><td>오토마타<br/>와 응용<br/>(황선명)<br/></td>
+	<td>12시</td><td></td><td rowspan="2"><p id="user_id_2">인터넷<br/>프로그래밍<br/>(우훈식)<br/></p></td><td><p id="user_id_3">오토마타<br/>와 응용<br/>(황선명)<br/></p></td>
 	</tr>
 	<tr>
-	<td>13시</td><td></td><td>디지털<br/>논리회로<br/>(김홍준)<br/></td><td rowspan="2">인터넷<br/>프로그래밍<br/>(우훈식)<br/></td>
+	<td>13시</td><td></td><td><p id="user_id_6">디지털<br/>논리회로<br/>(김홍준)<br/></p></td><td rowspan="2"><p id="user_id_2">인터넷<br/>프로그래밍<br/>(우훈식)<br/></p></td>
 	</tr>
 	<tr>
-	<td>14시</td><td rowspan="2">디지털<br/>논리회로<br/>(김홍준)<br/></td><td></td><td rowspan="4">C++<br/>프로그래밍<br/>(이새봄)<br/></td>
+	<td>14시</td><td rowspan="2"><p id="user_id_6">디지털<br/>논리회로<br/>(김홍준)<br/></p></td><td></td><td rowspan="4"><p id="user_id_7">C++<br/>프로그래밍<br/>(이새봄)<br/></p></td>
 	</tr>
 	<tr>
-	<td>15시</td><td></td><td rowspan="2">캠퍼스<br/>멘토링<br/>(김민수)<br/></td>
+	<td>15시</td><td></td><td rowspan="2"><p id="user_id_5">캠퍼스<br/>멘토링<br/>(김민수)<br/></p></td>
 	</tr>
 	<tr>
 	<td>16시</td><td></td><td></td>
