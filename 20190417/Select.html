@@ -1,0 +1,52 @@
+<!doctype html>  <!-- Select.html-->
+<html>
+<head>
+<script language = "javascript"> 
+//상위 셀렉트로 하위 셀렉트 제어하기
+function showSub(obj) {
+    f = document.forms.select_machine;
+    if(obj == 1) {
+    
+        f.Racket1.style.display = "";
+        f.Racket2.style.display = "none";
+    } else {
+        f.Racket1.style.display = "none";
+        f.Racket2.style.display = "";
+     }
+
+}
+</script>
+</head>
+<body>
+<form name="select_machine">
+
+<p>회사</p>
+<select name=" " onChange="showSub(this.options[this.selectedIndex].value);"> 
+<option value="1">요넥스</option> 
+<option value="2">빅터</option> 
+</select>
+
+<br><br>
+
+<p>모델</p>
+<select name="Racket1" style="display: ;">
+<option value=" ">아스트록스</option>
+<option value=" ">나노플레어</option>
+<option value=" ">듀오라</option>
+<option value=" ">나노레이</option>
+<option value=" ">나노스피드</option>
+
+</select>
+
+<select name="Racket2" style="display: none;">
+<option value=" ">브레이브 소드</option>
+<option value=" ">제트 스피드</option>
+<option value=" ">아우라 스피드</option>
+<option value=" ">미티어</option>
+<option value=" ">하이퍼나노</option>
+
+</select>
+
+</form>
+</body>
+</html>
